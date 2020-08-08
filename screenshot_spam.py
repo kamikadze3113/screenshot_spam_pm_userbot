@@ -1,4 +1,4 @@
-#by @kamikadze3113
+#GitHub
 from .. import loader, utils
 from telethon import events, errors, functions, types
 
