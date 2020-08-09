@@ -9,7 +9,7 @@ def register(cb):
 class ScrSpamMod(loader.Module):
 	"""Screenshot Spammer by @KeyZenD"""
 
-	strings = {'name': 'ScrSpam'}
+	strings = {'name': 'SpamScreenshot'}
 
 	def __init__(self):
 		self.name = self.strings['name']
@@ -27,7 +27,7 @@ class ScrSpamMod(loader.Module):
 		r = utils.get_args(message)
 		if r and r[0].isdigit():
 			a = int(r[0])
-		await message.edit("Screenshoting...")
+		await message.edit("Пошёл процесс...")
 		for _ in range(a):
 			await message.client(functions.messages.SendScreenshotNotificationRequest(peer=message.to_id, reply_to_msg_id=message.id))
 		await message.delete()
