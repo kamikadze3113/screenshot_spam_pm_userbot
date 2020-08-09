@@ -1,4 +1,5 @@
 #GitHub
+#Changed by @kamikadze3113 (Telegram)
 from .. import loader, utils
 from telethon import events, errors, functions, types
 
